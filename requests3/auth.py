@@ -11,6 +11,7 @@ import re
 import time
 import hashlib
 import threading
+import warnings
 
 from base64 import b64encode
 

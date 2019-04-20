@@ -59,7 +59,7 @@ Requests III is ready for today's web.
 -   `.netrc` Support
 -   Chunked Requests
 
-Requests officially supports Python 2.7 & 3.4–3.7, and runs great on
+Requests officially supports Python 3.4–3.7, and runs great on
 PyPy.
 
 Installation

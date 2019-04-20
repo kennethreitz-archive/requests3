@@ -12,7 +12,7 @@ import warnings
 import re
 
 import io
-import requests
+import requests3 as requests
 import pytest
 import pytest_httpbin
 from requests3.adapters import HTTPAdapter

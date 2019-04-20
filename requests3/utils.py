@@ -8,6 +8,7 @@ that are also useful for external consumption.
 """
 
 import codecs
+import collections
 import contextlib
 import io
 import os

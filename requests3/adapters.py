@@ -758,7 +758,7 @@ class AsyncHTTPAdapter(HTTPAdapter):
                     # Receive the response from the server
                     try:
                         # For Python 2.7, use buffering of HTTP responses
-                        r = alow_conn.getresponse(buffering=True)
+                        r = low_conn.getresponse(buffering=True)
                     except TypeError:
                         # For Python 3.3+ versions, this is the default
                         r = low_conn.getresponse()

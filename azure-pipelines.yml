@@ -23,9 +23,11 @@ steps:
 
 - script: |
     python -m pip install --upgrade pip
-    pip install --no-warn-script-location --user pipenv
+    python -m pip install --no-warn-script-location --user pipenv
     python -m site --user-base
-    pwd 
+    ls -f $(python -m site --user-base)
+    pwd
+    ls -l
     .local/pipenv install --dev
     #$(python -m site --user-base)/pipenv install --dev
   displayName: 'Install dependencies'

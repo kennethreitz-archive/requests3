@@ -24,6 +24,7 @@ steps:
 - script: |
     python --version
     python -m pip install --upgrade pip
+    pip install trio
     pip install --no-warn-script-location --user pipenv
     $(python -m site --user-base)/bin/pipenv install --system --dev
   displayName: 'Install dependencies'

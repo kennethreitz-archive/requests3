@@ -28,7 +28,7 @@ steps:
     ls -f $(python -m site --user-base)
     pwd
     ls -l
-    .local/pipenv install --dev
+    .local/bin/pipenv install --dev
     #$(python -m site --user-base)/pipenv install --dev
   displayName: 'Install dependencies'
 

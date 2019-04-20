@@ -22,14 +22,10 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
+    python --version
     python -m pip install --upgrade pip
-    python -m pip install --no-warn-script-location --user pipenv
-    python -m site --user-base
-    ls -f $(python -m site --user-base)
-    pwd
-    ls -l
-    .local/bin/pipenv install --dev
-    #$(python -m site --user-base)/pipenv install --dev
+    pip install --no-warn-script-location --user pipenv
+    $(python -m site --user-base)/bin/pipenv install --dev
   displayName: 'Install dependencies'
 
 - script: |
